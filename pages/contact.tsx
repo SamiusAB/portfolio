@@ -1,19 +1,28 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Header from '../components/header'
+import ContactForm from '../components/ContactForm'
+import Footer from '../components/Footer'
 
-const Home: NextPage = () => {
+const ContactPage = () => {
+
   return (
     <div className="main"> 
       <Header />
 
-      <div className='content text-center mt-8'>
+      <div className='container contact-content'>
+        <div className="title">
           <h1>Contact</h1>
+        </div>
+        <div className="form">
+          <ContactForm />
+        </div>
       </div>
+
+      <Footer />
     </div>
   )
 }
 
-export default Home
+export default ContactPage

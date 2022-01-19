@@ -20,6 +20,7 @@ a {
   background-color: #4158D0;
   background-image: linear-gradient(315deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   height: max-content;
+  position: relative;
 }
 
 .is-transparent {
@@ -38,7 +39,9 @@ a {
   justify-content: center;
   align-items: center;
 }
-
+.contact-content {
+  height: 90vh;
+}
 .footer {
   height: 5vh;
   display: flex;

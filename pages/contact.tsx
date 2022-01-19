@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/header'
-import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 
 const ContactPage = () => {
@@ -16,7 +15,7 @@ const ContactPage = () => {
       <div className="field">
         <label className="label">Name</label>
         <div className="control">
-          <input id="name" className="input"  type="text" placeholder="Text input" required type="text" />
+          <input id="name" className="input"  type="text" placeholder="Text input" required />
         </div>
       </div>
       <div className="field">
@@ -28,7 +27,7 @@ const ContactPage = () => {
       <div className="field">
         <label className="label">Email</label>
         <div className="control">
-          <input id="email" className="input" type="text" placeholder="Text input" />
+          <input id="email" className="input" type="email" placeholder="Text input" required />
         </div>
       </div>
       <div className="field">
@@ -51,7 +50,6 @@ const ContactPage = () => {
           <h1>Contact</h1>
         </div>
         <div className="form">
-          {/* <ContactForm /> */}
           { ContactForm }
         </div>
       </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
 .container {
   padding: 0 2rem;
 }
@@ -5,11 +7,8 @@
 .main {
   min-height: 100vh;
   padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #4158D0;
+  background-image: linear-gradient(315deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
 .footer {
@@ -113,4 +112,78 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.showcase_overlay__left {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7);;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  right: 1rem;
+  bottom: 0;
+  text-align: center;
+  z-index: 0;
+}
+
+.showcase_overlay__right {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7);;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 0;
+}
+.showcase_overlay__left:hover  {
+  opacity: 1;
+}
+
+.showcase_overlay__right:hover {
+  opacity: 1;
+}
+
+.showcase_text {
+  position: relative;
+  height: 5%;
+  top: 48.5%;
+}
+
+.cta {
+  padding: 8px 21px;
+}
+
+.cta__primary {
+  background: #25282a;
+  padding: 8px 21px;
+  color: white;
+}
+
+.sitecase_overlay__left {
+  padding: 2rem 2rem;
+}
+
+@media (min-width: 1020px) {
+  .sitecase_overlay__left {
+    position: absolute;
+    bottom: 0rem;
+    width: 75%;
+    left: 4%;
+    background: white;
+  }
+}
+
+@media (max-width: 1020px) and (min-width: 768px) {
+  .sitecase_overlay__left {
+    bottom: 0%;
+    position: absolute;
+    margin: 0 2rem;
+    background: white;
+  }
+}
+
+.heading {
+  font-size: 2.5rem;
 }

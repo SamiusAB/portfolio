@@ -7,6 +7,41 @@ import Footer from '../components/Footer'
 
 const ContactPage = () => {
 
+  const ContactForm = (
+    <form
+      name="contact-form"
+      method="POST"
+      action="contact/?success=true"
+    >
+      <div className="field">
+        <label className="label">Name</label>
+        <div className="control">
+          <input id="name" className="input"  type="text" placeholder="Text input" required type="text" />
+        </div>
+      </div>
+      <div className="field">
+        <label className="label">Company</label>
+        <div className="control">
+          <input id="company" className="input"  type="text" placeholder="Text input" />
+        </div>
+      </div>
+      <div className="field">
+        <label className="label">Email</label>
+        <div className="control">
+          <input id="email" className="input" type="text" placeholder="Text input" />
+        </div>
+      </div>
+      <div className="field">
+        <label className="label">Message</label>
+        <div className="control">
+          <textarea id="message" className="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+  );
+
   return (
     <div className="main"> 
       <Header />
@@ -16,14 +51,8 @@ const ContactPage = () => {
           <h1>Contact</h1>
         </div>
         <div className="form">
-          <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
-            <input type="name" name="name" />
-            <input type="email" name="email" />
-            <input type="subject" name="subject" />
-            <textarea name="message"></textarea>
-          </form>
-
-          <ContactForm />
+          {/* <ContactForm /> */}
+          { ContactForm }
         </div>
       </div>
 

@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import MobileMenu from './MobileMenu'
 import logo from '../public/port-logo.png'
 import { Button, Navbar } from 'react-bulma-components';
 import Image from 'next/image';

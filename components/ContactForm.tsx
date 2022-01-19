@@ -2,13 +2,11 @@ import { useState } from 'react'
 import { Form, Icon, Block, Button } from 'react-bulma-components'
 
 const ContactForm = () => {
-    const [username, setUsername] = useState('bulma');
-    const [email, setEmail] = useState('hello@');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const [tocAgreed, setTocAgreed] = useState(false);
-    const [questionValue, setQuestionValue] = useState('');
-  
+
     return (
       <form 
         method="POST"
@@ -16,14 +14,14 @@ const ContactForm = () => {
         action="contact/?success=true"
         data-netlify="true"
         >
+        <input type="hidden" name="form-name" value="name_of_my_form" />
         <Form.Field>
-          <Form.Label>Username</Form.Label>
+          <Form.Label>Name</Form.Label>
           <Form.Control>
             <Form.Input
-              color="success"
-              value={username}
+              value={name}
               onChange={(e) => {
-                return setUsername(e.target.value);
+                return setName(e.target.value);
               }}
             />
             <Icon align="left" size="small">
@@ -33,14 +31,12 @@ const ContactForm = () => {
               <i className="fas fa-check" />
             </Icon>
           </Form.Control>
-          <Form.Help color="success">This username is available</Form.Help>
         </Form.Field>
   
         <Form.Field>
           <Form.Label>Email</Form.Label>
           <Form.Control>
             <Form.Input
-              color="danger"
               value={email}
               onChange={(e) => {
                 return setEmail(e.target.value);
@@ -98,44 +94,6 @@ const ContactForm = () => {
               return setMessage(e.target.value);
             }}
           />
-        </Form.Field>
-  
-        <Form.Field>
-          <Form.Control>
-            <Form.Checkbox
-              checked={tocAgreed}
-              onChange={(e) => {
-                return setTocAgreed(e.target.checked);
-              }}
-            >
-              {'  '}I agree to the <a href="#">terms and conditions</a>
-            </Form.Checkbox>
-          </Form.Control>
-        </Form.Field>
-  
-        <Form.Field>
-          <Form.Control>
-            <Form.Radio
-              value="yes"
-              name="question"
-              checked={questionValue === 'yes'}
-              onChange={(e) => {
-                return setQuestionValue(e.target.value);
-              }}
-            >
-              {'  '}Yes
-            </Form.Radio>
-            <Form.Radio
-              value="no"
-              name="question"
-              checked={questionValue === 'no'}
-              onChange={(e) => {
-                return setQuestionValue(e.target.value);
-              }}
-            >
-              {'  '}No
-            </Form.Radio>
-          </Form.Control>
         </Form.Field>
   
         <Form.Field kind="group">

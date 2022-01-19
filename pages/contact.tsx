@@ -16,6 +16,13 @@ const ContactPage = () => {
           <h1>Contact</h1>
         </div>
         <div className="form">
+          <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+            <input type="name" name="name" />
+            <input type="email" name="email" />
+            <input type="subject" name="subject" />
+            <textarea name="message"></textarea>
+          </form>
+
           <ContactForm />
         </div>
       </div>

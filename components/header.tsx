@@ -8,13 +8,15 @@ function Header() {
         <div className='Header'>
             <Navbar transparent={true}>
               <div className="navbar-brand">
-                <a className="navbar-item" href="/">
-                  <Image
-                      src={logo}
-                      alt="Samuel Abera Logo"
-                      layout="intrinsic"
-                  />
-                </a>
+                <div className="navbar-item" >
+                  <Link href="/" passHref>
+                    <Image
+                        src={logo}
+                        alt="Samuel Abera Logo"
+                        layout="intrinsic"
+                    />
+                  </Link>
+                </div>
 
                 <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                   <span aria-hidden="true"></span>
@@ -29,9 +31,9 @@ function Header() {
                   <div className="navbar-item">
                     <div className="buttons">
                       <Button color="black">
-                        <a>
+                        <Link href="/contact" passHref>
                           <strong>Contact</strong>
-                        </a>
+                        </Link >
                       </Button>
                     </div>
                   </div>

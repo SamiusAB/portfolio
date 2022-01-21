@@ -119,7 +119,7 @@ const ContactPage = () => {
               </Form.Control>
             </Form.Field>
           </form>
-      </div>
+        </div>
       </div>
 
       <Footer />

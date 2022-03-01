@@ -1,6 +1,7 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import styled from "styled-components";
+import dark from "../../assets/image/png/logo-dark-lc.png";
 import Logo from "../Logo";
 
 const Overlay = styled.div`
@@ -102,7 +103,13 @@ const Offcanvas = ({ show, onHideOffcanvas, children, ...rest }) => {
           <div className="p-3">
             <div className="mb-3 d-flex align-items-center justify-content-between">
               <LogoContainer>
-                <Logo onClick={onHideOffcanvas} />
+              <Image
+                    src={dark}
+                    alt="Samuel Abera Logo"
+                    layout="intrinsic"
+                    height="30px"
+                    width="auto"
+                />
               </LogoContainer>
               <CloseButton onClick={onHideOffcanvas} />
             </div>

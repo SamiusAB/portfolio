@@ -191,7 +191,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
         ))}
 
         {/* Open about modal */}
-        <ListGroup.Item
+        {/* <ListGroup.Item
           css={`
             padding-left: 0px !important;
             padding-right: 0 !important;
@@ -211,7 +211,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
               about me.
             </a>
           }
-        </ListGroup.Item>
+        </ListGroup.Item> */}
 
         {/* Open contact modal */}
         <ListGroup.Item

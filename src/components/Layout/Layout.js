@@ -22,7 +22,7 @@ import GlobalContext from "../../context/GlobalContext";
 
 import GlobalStyle from "../../utils/globalStyle";
 
-import imgFavicon from "../../assets/favicon.png";
+import imgFavicon from "../../assets/favicon.jpeg";
 
 import { get, merge } from "lodash";
 
@@ -129,7 +129,7 @@ const Layout = ({ children, pageContext }) => {
         <ThemeSwitch />
         <GlobalStyle />
         <Head>
-          <title>Folio</title>
+          <title>Samuel Abera - Portfolio</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Head>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>

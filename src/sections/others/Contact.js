@@ -39,7 +39,7 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
                 <div>
                   <Text color="light">Email me at</Text>
 
-                  <a href="mailto:hello@folio.com" className="font-weight-bold">
+                  <a href="mailto:samuel@abera.com" className="font-weight-bold">
                     <Span color="primary">samuel@abera.ca</Span>
                   </a>
                 </div>
@@ -47,7 +47,7 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
                   <Text color="light">Call me at</Text>
 
                   <div>
-                    <a href="tel:+1-402-4983" className="font-weight-bold">
+                    <a href="tel:+1-226-500-2952" className="font-weight-bold">
                       <Span color="primary">+1-226-500-2952</Span>
                     </a>
                   </div>

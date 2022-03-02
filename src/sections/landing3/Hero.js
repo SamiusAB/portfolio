@@ -32,7 +32,7 @@ const Hero = () => {
             <img
               src={imgL}
               alt=""
-              css={`
+              style={`
                 border-radius: 50rem !important;
               `}
             />

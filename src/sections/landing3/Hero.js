@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
 import GlobalContext from "../../context/GlobalContext";
 import { Title, ButtonIcon, Section, Box } from "../../components/Core";
@@ -29,13 +29,20 @@ const Hero = () => {
       <SectionStyled hero className="position-relative">
         <Container>
           <Box pb="40px">
-            <img
+            {/* <img
               src={imgL}
               alt=""
-              style={`
+              css={`
                 border-radius: 50rem !important;
               `}
-            />
+            /> */}
+              <Image
+                  src={imgL}
+                  alt="Samuel Abera Logo"
+                  style={{
+                    borderRadius: "50rem !important",
+                  }}
+              />
           </Box>
           <Row className="align-items-lg-end">
             <Col lg="8" sm="12" className="mb-5 mb-lg-0">

@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { Section, Button, Title, Text, Box } from "../components/Core";
-import PageWrapper from "../components/PageWrapper";
-import Contact from "../sections/common/Contact";
+import { Section, Button, Title, Text, Box } from "../../components/Core";
+import PageWrapper from "../../components/PageWrapper";
+import Contact from "../../sections/common/Contact";
 import imgWorkCover from "../assets/image/jpg/details/details-1.jpg";
 import imgS1 from "../assets/image/jpg/details/details-6.jpg";
 import imgS2 from "../assets/image/jpg/details/details-5.jpg";
@@ -12,7 +12,7 @@ import imgS3 from "../assets/image/jpg/details/details-4.jpg";
 import imgS4 from "../assets/image/jpg/details/details-3.jpg";
 import imgS5 from "../assets/image/jpg/details/details-8.jpg";
 import imgS6 from "../assets/image/jpg/details/details-7.jpg";
-import { device } from "../utils";
+import { device } from "../../utils";
 
 const WorkSingle = () => {
   return (

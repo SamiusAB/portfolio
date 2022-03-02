@@ -29,20 +29,13 @@ const Hero = () => {
       <SectionStyled hero className="position-relative">
         <Container>
           <Box pb="40px">
-            {/* <img
-              src={imgL}
-              alt=""
-              css={`
-                border-radius: 50rem !important;
-              `}
-            /> */}
-              <Image
-                  src={imgL}
-                  alt="Samuel Abera Logo"
-                  style={{
-                    borderRadius: "50rem !important",
-                  }}
-              />
+            <Image
+                src={imgL}
+                alt="Samuel Abera Logo"
+                style={{
+                  borderRadius: "50rem !important",
+                }}
+            />
           </Box>
           <Row className="align-items-lg-end">
             <Col lg="8" sm="12" className="mb-5 mb-lg-0">

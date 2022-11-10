@@ -47,8 +47,8 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
                   <Text color="light">Call me at</Text>
 
                   <div>
-                    <a href="tel:+1-226-500-2952" className="font-weight-bold">
-                      <Span color="primary">+1-226-500-2952</Span>
+                    <a href="tel:+1-647-391-4887" className="font-weight-bold">
+                      <Span color="primary">+1-647-391-4887</Span>
                     </a>
                   </div>
                 </div>

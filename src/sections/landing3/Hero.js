@@ -34,6 +34,7 @@ const Hero = () => {
                 alt="Samuel Abera Logo"
                 style={{
                   borderRadius: "50rem !important",
+                  maxWidth: "20rem",
                 }}
             />
           </Box>

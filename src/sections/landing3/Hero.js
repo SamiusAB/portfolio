@@ -42,7 +42,7 @@ const Hero = () => {
             <Col lg="8" sm="12" className="mb-5 mb-lg-0">
               <Box>
                 <Title variant="hero">
-                  Front End Developer <br />
+                  Full Stack Developer <br />
                 </Title>
               </Box>
             </Col>
